@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jpl/Desktop/CameraControl/gphoto-live-preview/program/main.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+stddef.h
+-
+stdbool.h
+-
+signal.h
+-
+errno.h
+-
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+

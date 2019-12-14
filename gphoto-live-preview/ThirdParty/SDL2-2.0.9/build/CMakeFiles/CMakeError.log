@@ -1,0 +1,795 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4062523199/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4062523199.dir/build.make CMakeFiles/cmTryCompileExec4062523199.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4062523199.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTryCompileExec4062523199.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:1:0: error: -mpreferred-stack-boundary=2 is not between 4 and 12
+ int x = 0; int main(int argc, char **argv) {}
+ ^
+make[1]: *** [CMakeFiles/cmTryCompileExec4062523199.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4062523199/fast] Error 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1140820592/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1140820592.dir/build.make CMakeFiles/cmTryCompileExec1140820592.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1140820592.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTryCompileExec1140820592.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1140820592.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec1140820592/fast] Error 2
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1206976451/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1206976451.dir/build.make CMakeFiles/cmTryCompileExec1206976451.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1206976451.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTryCompileExec1206976451.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTryCompileExec1206976451.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1206976451/fast] Error 2
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2709035532/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2709035532.dir/build.make CMakeFiles/cmTryCompileExec2709035532.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2709035532.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec2709035532.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:23: fatal error: libunwind.h: No such file or directory
+ #include <libunwind.h>
+                       ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2709035532.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2709035532/fast] Error 2
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2071587964/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2071587964.dir/build.make CMakeFiles/cmTryCompileExec2071587964.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2071587964.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTryCompileExec2071587964.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2071587964
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2071587964.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   CMakeFiles/cmTryCompileExec2071587964.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2071587964 -rdynamic 
+CMakeFiles/cmTryCompileExec2071587964.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2071587964] Error 1
+make: *** [cmTryCompileExec2071587964/fast] Error 2
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1599524392/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1599524392.dir/build.make CMakeFiles/cmTryCompileExec1599524392.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1599524392.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTryCompileExec1599524392.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1599524392
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1599524392.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   CMakeFiles/cmTryCompileExec1599524392.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1599524392 -rdynamic 
+CMakeFiles/cmTryCompileExec1599524392.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1599524392] Error 1
+make: *** [cmTryCompileExec1599524392/fast] Error 2
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1889763030/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1889763030.dir/build.make CMakeFiles/cmTryCompileExec1889763030.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1889763030.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTryCompileExec1889763030.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1889763030
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1889763030.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   CMakeFiles/cmTryCompileExec1889763030.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1889763030 -rdynamic 
+CMakeFiles/cmTryCompileExec1889763030.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1889763030] Error 1
+make: *** [cmTryCompileExec1889763030/fast] Error 2
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3406245667/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3406245667.dir/build.make CMakeFiles/cmTryCompileExec3406245667.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3406245667.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTryCompileExec3406245667.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3406245667
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3406245667.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   CMakeFiles/cmTryCompileExec3406245667.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3406245667 -rdynamic 
+CMakeFiles/cmTryCompileExec3406245667.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3406245667] Error 1
+make: *** [cmTryCompileExec3406245667/fast] Error 2
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec519352179/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec519352179.dir/build.make CMakeFiles/cmTryCompileExec519352179.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec519352179.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTryCompileExec519352179.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec519352179
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec519352179.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   CMakeFiles/cmTryCompileExec519352179.dir/CheckFunctionExists.c.o  -o cmTryCompileExec519352179 -rdynamic 
+CMakeFiles/cmTryCompileExec519352179.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec519352179] Error 1
+make: *** [cmTryCompileExec519352179/fast] Error 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec209514943/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec209514943.dir/build.make CMakeFiles/cmTryCompileExec209514943.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec209514943.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTryCompileExec209514943.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec209514943
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec209514943.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   CMakeFiles/cmTryCompileExec209514943.dir/CheckFunctionExists.c.o  -o cmTryCompileExec209514943 -rdynamic 
+CMakeFiles/cmTryCompileExec209514943.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec209514943] Error 1
+make: *** [cmTryCompileExec209514943/fast] Error 2
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1710400807/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1710400807.dir/build.make CMakeFiles/cmTryCompileExec1710400807.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1710400807.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTryCompileExec1710400807.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1710400807
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1710400807.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   CMakeFiles/cmTryCompileExec1710400807.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1710400807 -rdynamic 
+CMakeFiles/cmTryCompileExec1710400807.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1710400807] Error 1
+make: *** [cmTryCompileExec1710400807/fast] Error 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1262021849/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1262021849.dir/build.make CMakeFiles/cmTryCompileExec1262021849.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1262021849.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTryCompileExec1262021849.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1262021849
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1262021849.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   CMakeFiles/cmTryCompileExec1262021849.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1262021849 -rdynamic 
+CMakeFiles/cmTryCompileExec1262021849.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1262021849] Error 1
+make: *** [cmTryCompileExec1262021849/fast] Error 2
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec352864096/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec352864096.dir/build.make CMakeFiles/cmTryCompileExec352864096.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec352864096.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTryCompileExec352864096.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec352864096
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec352864096.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   CMakeFiles/cmTryCompileExec352864096.dir/CheckFunctionExists.c.o  -o cmTryCompileExec352864096 -rdynamic 
+CMakeFiles/cmTryCompileExec352864096.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec352864096] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec352864096/fast] Error 2
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1960247359/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1960247359.dir/build.make CMakeFiles/cmTryCompileExec1960247359.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1960247359.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTryCompileExec1960247359.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1960247359
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1960247359.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   CMakeFiles/cmTryCompileExec1960247359.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1960247359 -rdynamic 
+CMakeFiles/cmTryCompileExec1960247359.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1960247359] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1960247359/fast] Error 2
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2839092828/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2839092828.dir/build.make CMakeFiles/cmTryCompileExec2839092828.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2839092828.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTryCompileExec2839092828.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2839092828
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2839092828.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   CMakeFiles/cmTryCompileExec2839092828.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2839092828 -rdynamic 
+CMakeFiles/cmTryCompileExec2839092828.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2839092828] Error 1
+make: *** [cmTryCompileExec2839092828/fast] Error 2
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3457298543/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3457298543.dir/build.make CMakeFiles/cmTryCompileExec3457298543.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3457298543.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTryCompileExec3457298543.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3457298543
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3457298543.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   CMakeFiles/cmTryCompileExec3457298543.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3457298543 -rdynamic 
+CMakeFiles/cmTryCompileExec3457298543.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3457298543] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3457298543/fast] Error 2
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1819799964/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1819799964.dir/build.make CMakeFiles/cmTryCompileExec1819799964.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1819799964.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTryCompileExec1819799964.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1819799964
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1819799964.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   CMakeFiles/cmTryCompileExec1819799964.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1819799964 -rdynamic 
+CMakeFiles/cmTryCompileExec1819799964.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1819799964] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1819799964/fast] Error 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1102104019/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1102104019.dir/build.make CMakeFiles/cmTryCompileExec1102104019.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1102104019.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTryCompileExec1102104019.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1102104019
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1102104019.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   CMakeFiles/cmTryCompileExec1102104019.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1102104019 -rdynamic 
+CMakeFiles/cmTryCompileExec1102104019.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1102104019] Error 1
+make: *** [cmTryCompileExec1102104019/fast] Error 2
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2358349539/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2358349539.dir/build.make CMakeFiles/cmTryCompileExec2358349539.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2358349539.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTryCompileExec2358349539.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2358349539
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2358349539.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   CMakeFiles/cmTryCompileExec2358349539.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2358349539 -rdynamic -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2358349539] Error 1
+make: *** [cmTryCompileExec2358349539/fast] Error 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1551016915/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1551016915.dir/build.make CMakeFiles/cmTryCompileExec1551016915.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1551016915.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTryCompileExec1551016915.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘alloca’ [enabled by default]
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1551016915
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1551016915.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   CMakeFiles/cmTryCompileExec1551016915.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1551016915 -rdynamic 
+CMakeFiles/cmTryCompileExec1551016915.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1551016915] Error 1
+make: *** [cmTryCompileExec1551016915/fast] Error 2
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec473230385/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec473230385.dir/build.make CMakeFiles/cmTryCompileExec473230385.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec473230385.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTryCompileExec473230385.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec473230385
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec473230385.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   CMakeFiles/cmTryCompileExec473230385.dir/CheckFunctionExists.c.o  -o cmTryCompileExec473230385 -rdynamic 
+CMakeFiles/cmTryCompileExec473230385.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec473230385] Error 1
+make: *** [cmTryCompileExec473230385/fast] Error 2
+
+
+Determining if the include file alsa/asoundlib.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2176072173/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2176072173.dir/build.make CMakeFiles/cmTryCompileExec2176072173.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2176072173.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec2176072173.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: alsa/asoundlib.h: No such file or directory
+ #include <alsa/asoundlib.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2176072173.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2176072173/fast] Error 2
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec776142299/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec776142299.dir/build.make CMakeFiles/cmTryCompileExec776142299.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec776142299.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec776142299.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: audio/audiolib.h: No such file or directory
+ #include <audio/audiolib.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec776142299.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec776142299/fast] Error 2
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec538041778/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec538041778.dir/build.make CMakeFiles/cmTryCompileExec538041778.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec538041778.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec538041778.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:19: fatal error: sndio.h: No such file or directory
+ #include <sndio.h>
+                   ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec538041778.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec538041778/fast] Error 2
+
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec77690517/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec77690517.dir/build.make CMakeFiles/cmTryCompileExec77690517.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec77690517.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec77690517.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:24: fatal error: samplerate.h: No such file or directory
+ #include <samplerate.h>
+                        ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec77690517.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec77690517/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec145239571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec145239571.dir/build.make CMakeFiles/cmTryCompileExec145239571.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec145239571.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTryCompileExec145239571.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:2:30: fatal error: bcm_host.h: No such file or directory
+         #include <bcm_host.h>
+                              ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec145239571.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec145239571/fast] Error 2
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2831890029/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2831890029.dir/build.make CMakeFiles/cmTryCompileExec2831890029.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2831890029.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_VIDEO_OPENGLES_V1   -o CMakeFiles/cmTryCompileExec2831890029.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: GLES/gl.h: No such file or directory
+       #include <GLES/gl.h>
+                           ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2831890029.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2831890029/fast] Error 2
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4079002608/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4079002608.dir/build.make CMakeFiles/cmTryCompileExec4079002608.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4079002608.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTryCompileExec4079002608.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:2:28: fatal error: gc_vdk.h: No such file or directory
+         #include <gc_vdk.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4079002608.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec4079002608/fast] Error 2
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1735531308/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1735531308.dir/build.make CMakeFiles/cmTryCompileExec1735531308.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1735531308.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTryCompileExec1735531308.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:4:36: fatal error: EGL/eglvivante.h: No such file or directory
+         #include <EGL/eglvivante.h>
+                                    ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1735531308.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec1735531308/fast] Error 2
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1449663208/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1449663208.dir/build.make CMakeFiles/cmTryCompileExec1449663208.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1449663208.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec1449663208.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: fatal error: libudev.h: No such file or directory
+ #include <libudev.h>
+                     ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1449663208.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1449663208/fast] Error 2
+
+
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2200205932/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2200205932.dir/build.make CMakeFiles/cmTryCompileExec2200205932.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2200205932.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec2200205932.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: fcitx/frontend.h: No such file or directory
+ #include <fcitx/frontend.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2200205932.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2200205932/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_INPUT_TSLIB failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4188791959/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4188791959.dir/build.make CMakeFiles/cmTryCompileExec4188791959.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4188791959.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_INPUT_TSLIB   -o CMakeFiles/cmTryCompileExec4188791959.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:2:27: fatal error: tslib.h: No such file or directory
+         #include "tslib.h"
+                           ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4188791959.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec4188791959/fast] Error 2
+
+Source file was:
+
+        #include "tslib.h"
+        int main(int argc, char** argv) { }
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2668096018/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2668096018.dir/build.make CMakeFiles/cmTryCompileExec2668096018.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2668096018.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTryCompileExec2668096018.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2668096018
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2668096018.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   CMakeFiles/cmTryCompileExec2668096018.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2668096018 -rdynamic -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2668096018] Error 1
+make: *** [cmTryCompileExec2668096018/fast] Error 2
+
+
+Determining if the include file usb.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1593044173/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1593044173.dir/build.make CMakeFiles/cmTryCompileExec1593044173.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1593044173.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec1593044173.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:17: fatal error: usb.h: No such file or directory
+ #include <usb.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1593044173.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1593044173/fast] Error 2
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec832251587/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec832251587.dir/build.make CMakeFiles/cmTryCompileExec832251587.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec832251587.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos    -o CMakeFiles/cmTryCompileExec832251587.dir/CheckIncludeFile.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: libusb.h: No such file or directory
+ #include <libusb.h>
+                    ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec832251587.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec832251587/fast] Error 2
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1891799481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1891799481.dir/build.make CMakeFiles/cmTryCompileExec1891799481.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1891799481.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTryCompileExec1891799481.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1891799481
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1891799481.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   CMakeFiles/cmTryCompileExec1891799481.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1891799481 -rdynamic -lusb 
+/usr/bin/ld: cannot find -lusb
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1891799481] Error 1
+make: *** [cmTryCompileExec1891799481/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1798182482/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1798182482.dir/build.make CMakeFiles/cmTryCompileExec1798182482.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1798182482.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_USBHID   -o CMakeFiles/cmTryCompileExec1798182482.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:10:34: fatal error: dev/usb/usb.h: No such file or directory
+         # include <dev/usb/usb.h>
+                                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1798182482.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1798182482/fast] Error 2
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec890824288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec890824288.dir/build.make CMakeFiles/cmTryCompileExec890824288.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec890824288.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DHAVE_PTHREAD_NP_H   -D_REENTRANT -pthread   -o CMakeFiles/cmTryCompileExec890824288.dir/src.c.o   -c /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c
+/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/src.c:3:34: fatal error: pthread_np.h: No such file or directory
+           #include <pthread_np.h>
+                                  ^
+compilation terminated.
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec890824288.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec890824288/fast] Error 2
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3517323425/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3517323425.dir/build.make CMakeFiles/cmTryCompileExec3517323425.dir/build
+make[1]: Entering directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3517323425.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread   -o CMakeFiles/cmTryCompileExec3517323425.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3517323425
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3517323425.dir/link.txt --verbose=1
+/usr/bin/cc  -g -O3 -idirafter /home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread   CMakeFiles/cmTryCompileExec3517323425.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3517323425 -rdynamic 
+CMakeFiles/cmTryCompileExec3517323425.dir/CheckFunctionExists.c.o: In function `main':
+/usr/local/share/cmake-3.1/Modules/CheckFunctionExists.c:11: undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3517323425] Error 1
+make: *** [cmTryCompileExec3517323425/fast] Error 2
+
+

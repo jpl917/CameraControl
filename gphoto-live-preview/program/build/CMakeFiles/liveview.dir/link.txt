@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/liveview.dir/main.c.o  -o liveview -rdynamic /usr/local/lib/libSDL2-2.0.so /usr/local/lib/libSDL2_image-2.0.so.0 -Wl,-rpath,/usr/local/lib 
