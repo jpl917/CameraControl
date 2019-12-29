@@ -1,0 +1,15 @@
+
+imageformat  "0" large JPEG   / "7" raw data + large JPEG
+imageformatsd
+
+/main/imgsettings/whitebalance
+/main/imgsettings/colortemperature
+/main/imgsettings/whitebalanceadjusta
+/main/imgsettings/whitebalanceadjustb
+/main/imgsettings/whitebalancexa
+/main/imgsettings/whitebalancexb
+
+focusmode="Manual"  "Manual"
+aspectratio="3:2"
+autoexposuremode="Manual" \
+
