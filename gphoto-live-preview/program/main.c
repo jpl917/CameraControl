@@ -11,8 +11,8 @@
 
 #define FRAME_WIDTH (1920)
 #define FRAME_HEIGHT (1080)
-#define WIN_WIDTH (200)
-#define WIN_HEIGHT (150)
+#define WIN_WIDTH  (300)
+#define WIN_HEIGHT (200)
 
 #define FRAME_RATE (30)
 #define FRAME_BUFFER_SIZE (4 * FRAME_WIDTH * FRAME_HEIGHT)
@@ -41,11 +41,12 @@ void draw()
 {
     SDL_RWops *rw;
     SDL_Surface *surface;
-	SDL_Rect wr;
-	wr.x = 0;
-	wr.y = 0;
-	wr.w = WIN_WIDTH;
-	wr.h = WIN_HEIGHT;
+    SDL_Rect wr;
+    wr.x = 0;
+    wr.y = 0;
+    wr.w = WIN_WIDTH;
+    wr.h = WIN_HEIGHT;
+
 
     rw = SDL_RWFromMem(frame_buffer, frame_buffer_size);
     if (!rw) {
@@ -56,6 +57,7 @@ void draw()
     if (!surface) {
         goto out;
     }
+
 
     //if (SDL_BlitSurface(surface, NULL, window_surface, &wr) < 0) {
     if (SDL_BlitScaled(surface, NULL, window_surface, &wr) < 0) {
@@ -104,8 +106,8 @@ size_t read_jpeg(FILE *file)
 
 int main(int argc, char **argv)
 {
-	char *wintitle = "Preview";
-	int wX = 0, wY = 0;
+    char *wintitle = "Preview";
+    int wX = 0, wY = 0;
     FILE *file = stdin;
 
     signal(SIGINT, handle_signal);
@@ -120,10 +122,9 @@ int main(int argc, char **argv)
 
     SDL_Init(SDL_INIT_VIDEO);
 
-    window = SDL_CreateWindow(
-			wintitle, wX, wY,
+    window = SDL_CreateWindow(wintitle, wX, wY,
             WIN_WIDTH, WIN_HEIGHT,
-            SDL_WINDOW_SHOWN //| SDL_WINDOW_BORDERLESS
+            SDL_WINDOW_BORDERLESS //SDL_WINDOW_SHOWN
     );
     if (!window) {
         fprintf(stderr, "%s\n", SDL_GetError());

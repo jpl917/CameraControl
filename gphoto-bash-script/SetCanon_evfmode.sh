@@ -1,6 +1,6 @@
 #!/bin/bash
-count=0
 
+count=0
 
 for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 {
@@ -9,13 +9,11 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	#echo 'Port: '$portname
 	let "count=$count+1"
 
-	gphoto2 --port "usb:$portname" -f /store_00020001/DCIM/100CANON  -D
-
-	let "count=$count+1"
-
-	
+	gphoto2 --port "usb:$portname" --set-config-index  evfmode=0           
+	#Choice: 0 1
+	#Choice: 1 0
 }
 done
 
-echo 'Clear Done'
+echo 'Set Done'
 

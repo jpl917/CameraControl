@@ -11,10 +11,9 @@ cd $dirname
 
 for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 {
-	#echo "---------------------------------------------------------" 
+	echo "---------------------------------------------------------" 
 	echo "Camera Id:" $count
-	#echo 'Port: '$portname
-	let "count=$count+1"
+	echo 'Port: '$portname
 	
 	if(($count<10));then
 	{
@@ -27,6 +26,7 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	fi
 	
 
+	let "count=$count+1"
 	
 }
 done
