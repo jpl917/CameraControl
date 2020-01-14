@@ -7,7 +7,6 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	#echo "---------------------------------------------------------" 
 	echo "Camera Id:" $count
 	#echo 'Port: '$portname
-	let "count=$count+1"
 
 	gphoto2 --port "usb:$portname" --set-config-index  drivemode=0           
 	#Choice: 0 Single
@@ -16,6 +15,9 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	#Choice: 3 Timer 10 sec
 	#Choice: 4 Timer 2 sec
 	#Choice: 5 Unknown value 0007  
+
+	
+	let "count=$count+1"
 	
 	
 }

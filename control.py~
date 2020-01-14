@@ -1,4 +1,0 @@
-#coding=utf-8
-import os
-print 'hello'
-a=os.system('sh/ClearCanon.sh')

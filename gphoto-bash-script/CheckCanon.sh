@@ -9,7 +9,6 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	#echo "---------------------------------------------------------" 
 	echo "Camera Id:" $count
 	#echo 'Port: '$portname
-	let "count=$count+1"	
 
 	## manual mode
 	autoexposuremode_value=$(gphoto2 --port "usb:$portname" --get-config autoexposuremode | grep 'Current' | sed 's/^Current: *//g')
@@ -25,6 +24,7 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 		let "focusmode_count=$focusmode_count+1"
 	fi
 
+	let "count=$count+1"	
 	
 }
 done

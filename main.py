@@ -103,7 +103,7 @@ def capture():
 	if ser.isOpen() == False:
 	    ser.open()
 	print "serial port: ",ser.name, " isOpen:", ser.isOpen()
-	ser.write("02".decode('hex') )   #01 - 6lights sequence    
+	ser.write("04".decode('hex') )   #01 - 6lights sequence    
 
 def exit():
 	EndPreview()
