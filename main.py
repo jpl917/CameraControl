@@ -51,7 +51,7 @@ def clearCamera():
 	var.set("Clear Done.")
 
 def DownloadCamera():
-	a=os.system('gphoto-bash-script/DownloadCanon.sh')
+	a=os.system('gphoto-bash-script/DownloadCanon_24x8.sh')
 	var.set("Download Done.")
 
 def FocusCamera():

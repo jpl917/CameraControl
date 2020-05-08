@@ -9,9 +9,6 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	#echo 'Port: '$portname
 
 	gphoto2 --port "usb:$portname"                  \
-	--set-config          shutterspeed="1/5"      \
-	--set-config          aperture=16   	        \
-	--set-config          iso=100                   \
 	--set-config-index    imageformat=7             \
 
 
