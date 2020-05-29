@@ -11,7 +11,7 @@ set(SDL2_INCLUDE_DIR /usr/local/include/SDL2/)
 set(SDL2_LIBRARIES /usr/local/lib/libSDL2-2.0.so)
 
 set(SDL2IMAGE_INCLUDE_DIRS /usr/local/include/SDL2/)
-set(SDL2IMAGE_LIBRARIES /usr/local/lib)
+set(SDL2IMAGE_LIBRARIES /usr/local/lib/libSDL2_image-2.0.so.0)
 
 MESSAGE(${SDL2IMAGE_INCLUDE_DIRS})
 MESSAGE(${SDL2IMAGE_LIBRARIES})

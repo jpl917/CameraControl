@@ -48,6 +48,29 @@ cd ../../SDL2_image-2.0.4
 make -j4 && sudo make install
 ```
 
+### install gphoto-live-preview
+cd ../../gphoto-live-preview/program
+mkdir build && cd build
+cmake ..
+make -j4
+
+
+## Camera Settings
+For details, please refer to [http://gphoto.sourceforge.net/doc/manual/ref-gphoto2-cli.html] or the documents/ folders
+
+gphoto2 --port "usb:$portname"
+* --set-config          shutterspeed="1/100"
+* --set-config          aperture=16
+* --set-config          iso=100
+* --set-config-index    imageformat=1   (1: JPEG, 7: RAW with large JPEG)
+* --set-config-index    drivemode=0 (0: Single, 1: Continuous high speed, 2: Continuous low speed)
+
+For unknown configuration choices: `--get-config [name]` or  `--get-config imageformat`
+
+List all configuration: `gphoto2 --list-all-config`
+
+
+## Install problems
 if error: 'aclocal-1.16' is missing on your system.
 ```
 wget https://ftp.gnu.org/gnu/automake/automake-1.16.tar.gz

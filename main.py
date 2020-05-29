@@ -75,14 +75,14 @@ def PreviewThread():
 	t1.start()
 
 def Preview():
-	a=os.system('gphoto-live-preview/preview24.sh')
+	a=os.system('gphoto-bash-script/preview24.sh')
 	var.set("preview")
 	
 	previewButton.configure(state='disabled')
 	endPreviewButton.configure(state='active')
 
 def EndPreview():
-	a=os.system('gphoto-live-preview/quit.sh')
+	a=os.system('gphoto-bash-script/preview_quit.sh')
 	var.set("end preview")
 
 	previewButton.configure(state='active')
