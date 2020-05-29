@@ -1,0 +1,23 @@
+
+# [Notice] For Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
+
+sudo apt-get install libpopt-dev
+sudo apt-get install libtool
+
+$ cd libgphoto2-2.5.20
+$ ./configure
+$ make
+$ sudo make install
+$ ldconfig
+
+$ cd gphoto2-2.5.20
+$ ./configure
+$ make
+$ sudo make install
+$ make check
+
+
+
+
+
+
