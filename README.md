@@ -1,15 +1,13 @@
 # Control Cameras using gphoto2
-The script is based on the libgphoto2 [http://www.gphoto.org/] and gphoto2 [http://www.gphoto.org/proj/gphoto2/]. 
-
-gphoto2 is a command line frontend of libgphoto2. The detailed usages are described in [http://gphoto.sourceforge.net/doc/manual/ref-gphoto2-cli.html].
+The script is based on the [libgphoto2](http://www.gphoto.org/) and [gphoto2](http://www.gphoto.org/proj/gphoto2/). gphoto2 is a command line frontend of libgphoto2. 
 
 It is used to change parameters, clear cameras, download images. 
 
-[Notice] For Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
+Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 
 
 ## Dependency
-### install libgphoto2 and gphoto2
+### libgphoto2 and gphoto2
 ```
 sudo apt-get install libpopt-dev
 sudo apt-get install libtool
@@ -27,9 +25,7 @@ sudo make install
 make check
 ```
 
-### install SDL2 for gphoto-live-preview
-* [SDL2](https://libsdl.org)
-* [SDL2_image](https://libsdl.org/projects/SDL_image)
+### [SDL2](https://libsdl.org) and [SDL2_image](https://libsdl.org/projects/SDL_image) for gphoto-live-preview
 
 ```
 sudo apt-get install libsdl2-dev
@@ -48,15 +44,20 @@ cd ../../SDL2_image-2.0.4
 make -j4 && sudo make install
 ```
 
-### install gphoto-live-preview
+### gphoto-live-preview
+```
 cd ../../gphoto-live-preview/program
 mkdir build && cd build
 cmake ..
 make -j4
+```
+
+## Usage
+`python main.py`
 
 
 ## Camera Settings
-For details, please refer to [http://gphoto.sourceforge.net/doc/manual/ref-gphoto2-cli.html] or the documents/ folders
+For details, please refer to [gphoto2](http://gphoto.sourceforge.net/doc/manual/ref-gphoto2-cli.html) or the documents/ folders
 
 gphoto2 --port "usb:$portname"
 * --set-config          shutterspeed="1/100"
@@ -70,7 +71,7 @@ For unknown configuration choices: `--get-config [name]` or  `--get-config image
 List all configuration: `gphoto2 --list-all-config`
 
 
-## Install problems
+## Problems during installation
 if error: 'aclocal-1.16' is missing on your system.
 ```
 wget https://ftp.gnu.org/gnu/automake/automake-1.16.tar.gz
