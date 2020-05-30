@@ -1,4 +1,5 @@
 #1. [gPhoto2](http://www.gphoto.org/proj/gphoto2)
+sudo apt-get install cmake
 sudo apt-get install libpopt-dev
 sudo apt-get install libtool
 
@@ -36,4 +37,3 @@ cd ../../gphoto-live-preview/program
 mkdir build && cd build
 cmake ..
 make -j4
-
