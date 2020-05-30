@@ -3,7 +3,18 @@ sudo apt-get install cmake
 sudo apt-get install libpopt-dev
 sudo apt-get install libtool
 
-cd ThirdParty/libgphoto2-2.5.20
+
+
+cd ThirdParty/
+tar xzvf autoconf-2.65.tar.gz 
+tar xzvf automake-1.16.tar.gz 
+tar xzvf gphoto2-2.5.20.tar.gz 
+tar xjvf libgphoto2-2.5.20.tar.bz2 
+tar xzvf m4-1.4.13.tar.gz 
+tar xzvf SDL2-2.0.9.tar.gz 
+tar xzvf SDL2_image-2.0.4.tar.gz 
+
+cd libgphoto2-2.5.20
 ./configure
 make
 sudo make install

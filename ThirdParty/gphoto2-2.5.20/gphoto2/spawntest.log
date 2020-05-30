@@ -1,4 +1,0 @@
-Before spawn...
-test-hook.sh: DOWNLOAD to /etc/shadow ;-P
-After spawn, retcode=0
-PASS spawntest (exit status: 0)

@@ -1,3 +1,10 @@
 *~
-ThirdParty/SDL2-2.0.9/build/
+ThirdParty/autoconf-2.65/
+ThirdParty/automake-1.16/
+ThirdParty/gphoto2-2.5.20/
+ThirdParty/libgphoto2-2.5.20/
+ThirdParty/m4-1.4.13/
+ThirdParty/SDL2-2.0.9/
+ThirdParty/SDL2_image-2.0.4/
 gphoto-live-preview/program/build/
+.git
