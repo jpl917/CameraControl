@@ -9,6 +9,8 @@ Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 ## Dependency
 `bash install.sh`
 
+or [recommend] install step by step as follows:
+
 ### libgphoto2 and gphoto2
 ```
 sudo apt-get install cmake libpopt-dev libtool
