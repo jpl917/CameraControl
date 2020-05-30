@@ -7,9 +7,7 @@ Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 
 
 ## Dependency
-`bash install.sh`
-
-or [recommend] install step by step as follows:
+[recommend] install step by step:
 
 ### libgphoto2 and gphoto2
 ```
@@ -28,7 +26,7 @@ cd libgphoto2-2.5.20
 ./configure
 make
 sudo make install
-ldconfig
+sudo ldconfig
 
 cd ../gphoto2-2.5.20
 ./configure
