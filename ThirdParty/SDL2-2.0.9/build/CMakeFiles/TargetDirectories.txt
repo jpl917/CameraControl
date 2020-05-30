@@ -1,4 +1,0 @@
-/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/uninstall.dir
-/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/SDL2-static.dir
-/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/SDL2.dir
-/home/jpl/Desktop/gphoto-live-preview/ThirdParty/SDL2-2.0.9/build/CMakeFiles/SDL2main.dir

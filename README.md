@@ -9,6 +9,7 @@ Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 ## Dependency
 ### libgphoto2 and gphoto2
 ```
+sudo apt-get install cmake
 sudo apt-get install libpopt-dev
 sudo apt-get install libtool
 
@@ -27,11 +28,6 @@ make check
 
 ### [SDL2](https://libsdl.org) and [SDL2_image](https://libsdl.org/projects/SDL_image) for gphoto-live-preview
 
-```
-sudo apt-get install libsdl2-dev
-sudo apt-get install libsdl2-image-dev
-```
-or install from source
 ```
 cd ThirdParty/SDL2-2.0.9
 mkdir build

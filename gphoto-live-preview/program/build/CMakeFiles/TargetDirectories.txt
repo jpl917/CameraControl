@@ -1,1 +1,0 @@
-/home/jpl/Desktop/CameraControl/gphoto-live-preview/program/build/CMakeFiles/liveview.dir
