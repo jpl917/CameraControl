@@ -93,8 +93,7 @@ tar zxvf autoconf-2.65.tar.gz
 cd autoconf-2.69
 ./configure --prefix=/usr/
 make -j4 && sudo make install
-
-[check: /usr/bin/autoconf -V]
+/usr/bin/autoconf -V
 
 wget -c ftp://ftp.gnu.org/gnu/m4/m4-1.4.13.tar.gz
 tar zxvf m4-1.4.13.tar.gz
@@ -102,13 +101,12 @@ cd m4-1.4.13
 ./configure --prefix=/usr/
 make -j4 && sudo make install
 
-wget -c ftp://ftp.gnu.org/gnu/libtool/libtool-1.3.5.tar.gz
-tar zxvf libtool-1.3.5.tar.gz
-cd libtool-1.3.5
-./configure --prefix=/usr/
-make -j4 && sudo make install
+sudo apt-get install libtool
+//wget -c ftp://ftp.gnu.org/gnu/libtool/libtool-1.3.5.tar.gz
+//tar zxvf libtool-1.3.5.tar.gz
+//cd libtool-1.3.5
+//./configure --prefix=/usr/
+//make -j4 && sudo make install
 ```
-
-
 
 

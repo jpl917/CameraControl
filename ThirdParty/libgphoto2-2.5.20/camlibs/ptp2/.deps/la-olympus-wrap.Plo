@@ -1,1 +1,6 @@
-# dummy
+ptp2/la-olympus-wrap.lo: ptp2/olympus-wrap.c /usr/include/stdc-predef.h \
+ ../config.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:

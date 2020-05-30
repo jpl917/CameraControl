@@ -1,0 +1,142 @@
+=================================================================
+   gphoto2 command line interface 2.5.20: tests/test-suite.log
+=================================================================
+
+# TOTAL: 1
+# PASS:  0
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  1
+# XPASS: 0
+# ERROR: 0
+
+.. contents:: :depth: 2
+
+FAIL: testsuite
+===============
+
+
+*** Running "Recursive directory file list" test
+Test test001 PASSED
+
+*** Running "Nonrecursive directory file list" test
+Test test002 PASSED
+
+*** Running "Invalid directory file list" test
+Test test003 PASSED
+
+*** Running "Recursive directory list" test
+Test test004 PASSED
+
+*** Running "Nonrecursive directory list" test
+Test test005 PASSED
+
+*** Running "Invalid directory list" test
+Test test006 PASSED
+
+*** Running "Make directory" test
+Test test007 PASSED
+
+*** Running "Remove directory" test
+Test test008 PASSED
+
+*** Running "File count" test
+Test test009 PASSED
+
+*** Running "Manual text" test
+Test test010 PASSED
+
+*** Running "About text" test
+Test test011 PASSED
+
+*** Running "Abilities" test
+Test test012 PASSED
+
+*** Running "File download" test
+Test test013 PASSED
+
+*** Running "File download to stdout" test
+Test test014 PASSED
+
+*** Running "File download with name" test
+Test test015 PASSED
+
+*** Running "File download from subdirectory" test
+Test test016 PASSED
+
+*** Running "File upload" test
+Test test017 PASSED
+
+*** Running "File upload with name" test
+Test test018 PASSED
+
+*** Running "File delete" test
+Test test019 PASSED
+
+*** Running "Invalid root directory" test
+Test test020 PASSED
+
+*** Running "Missing port option" test
+Test test021 PASSED
+
+*** Running "Filename percent operators" test
+Test test022 PASSED
+
+*** Running "Cameras list" test
+Test test023 PASSED
+
+*** Running "Delete all files" test
+Test test024 PASSED
+
+*** Running "Nonrecursive delete all files" test
+Test test025 PASSED
+
+*** Running "Recursive delete all files with subdirs" test
+Test test026 PASSED
+
+*** Running "File download without overwrite" test
+Test test027 PASSED
+
+*** Running "File download with overwrite" test
+Test test028 PASSED
+
+*** Running "Invalid camera" test
+Test test029 PASSED
+
+*** Running "Invalid port type" test
+Test test030 PASSED
+
+*** Running "Get storage info" test
+Test test031 PASSED
+
+*** Running "Hook script on download" test
+Test test032 PASSED
+
+*** Running "Hook script on upload" test
+Test test033 PASSED
+
+*** Running "Show image info" test
+Test test034 PASSED
+
+*** Running "Thumbnail download" test
+mv: cannot stat 'thumb_xexif.jpg': No such file or directory
+Test test035 FAILED: post test command failure
+
+*** Running "Thumbnail download for image w/o thumbnail" test
+Test test036 FAILED: got exit 0, expected 1
+
+*** Running "EXIF display" test
+Test test037 FAILED: got exit 1, expected 0
+
+*** Running "EXIF display on image w/o EXIF" test
+Test test038 PASSED
+
+*** Running "EXIF display on non-EXIF PNG" test
+Test test039 PASSED
+
+*** Running "Get all thumbnails" test
+Test test040 FAILED: got exit 0, expected 1
+
+4 test(s) have FAILED
+FAIL testsuite (exit status: 1)
+
