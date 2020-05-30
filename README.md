@@ -74,7 +74,7 @@ List all configuration: `gphoto2 --list-all-config`
 ## Problems during installation
 if error: 'aclocal-1.16' is missing on your system.
 ```
-wget https://ftp.gnu.org/gnu/automake/automake-1.16.tar.gz
+wget -c https://ftp.gnu.org/gnu/automake/automake-1.16.tar.gz
 tar -xzvf automake-1.16.tar.gz
 cd automake-1.16
 ./configure --prefix=/usr/
@@ -88,7 +88,7 @@ doc/automake-$(APIVERSION).1: $(automake_script) lib/Automake/Config.pm
                 $(update_mans) automake-$(APIVERSION) --no-discard-stderr
 
 
-wget ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.65.tar.gz
+wget -c ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.65.tar.gz
 tar zxvf autoconf-2.65.tar.gz
 cd autoconf-2.69
 ./configure --prefix=/usr/
@@ -96,14 +96,14 @@ make -j4 && sudo make install
 
 [check: /usr/bin/autoconf -V]
 
-wget ftp://ftp.gnu.org/gnu/m4/m4-1.4.13.tar.gz
-tar m4-1.4.13.tar.gz
+wget -c ftp://ftp.gnu.org/gnu/m4/m4-1.4.13.tar.gz
+tar zxvf m4-1.4.13.tar.gz
 cd m4-1.4.13
 ./configure --prefix=/usr/
 make -j4 && sudo make install
 
-wget ftp://ftp.gnu.org/gnu/libtool/libtool-1.3.5.tar.gz
-tar libtool-1.3.5.tar.gz
+wget -c ftp://ftp.gnu.org/gnu/libtool/libtool-1.3.5.tar.gz
+tar zxvf libtool-1.3.5.tar.gz
 cd libtool-1.3.5
 ./configure --prefix=/usr/
 make -j4 && sudo make install
