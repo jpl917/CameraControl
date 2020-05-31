@@ -11,13 +11,13 @@ Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 
 ### libgphoto2 and gphoto2
 ```
-sudo apt-get install cmake libpopt-dev libtool
+sudo apt-get install cmake libpopt-dev libtool libusb-dev libusb-1.0.0-dev
 
 cd ThirdParty/
 tar xzvf autoconf-2.65.tar.gz 
 tar xzvf automake-1.16.tar.gz 
-tar xzvf gphoto2-2.5.20.tar.gz 
-tar xjvf libgphoto2-2.5.20.tar.bz2 
+tar xzvf gphoto2-2.5.23.tar.gz 
+tar xjvf libgphoto2-2.5.23.tar.bz2 
 tar xzvf m4-1.4.13.tar.gz 
 tar xzvf SDL2-2.0.9.tar.gz 
 tar xzvf SDL2_image-2.0.4.tar.gz 
@@ -84,7 +84,8 @@ List all configuration: `gphoto2 --list-all-config`
 
 
 ## Problems during installation
-if error: 'aclocal-1.16' is missing on your system.
+
+#### if error: 'aclocal-1.16' is missing on your system.
 ```
 cd ThirdParty/automake-1.16
 ./configure --prefix=/usr/
@@ -113,5 +114,9 @@ sudo apt-get install libtool
 //./configure --prefix=/usr/
 //make -j4 && sudo make install
 ```
+
+#### if can not mount cameras (important)
+enter bios -> xhci: disabled
+
 
 
