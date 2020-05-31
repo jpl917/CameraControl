@@ -58,6 +58,12 @@ make -j4
 ./liveview
 ```
 
+### python related
+```
+sudo apt install python-tk
+sudo pip install matplotlib serial threading2 easygui
+```
+
 ## Usage
 `python main.py`
 
