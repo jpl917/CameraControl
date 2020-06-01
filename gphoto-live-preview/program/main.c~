@@ -53,7 +53,7 @@ void draw()
         goto out;
     }
 
-    surface = IMG_Load_RW(rw, 1);
+    surface = IMG_Load(rw, 1);
     if (!surface) {
 	fprintf(stderr, "IMG_Load_RW error\n");
         goto out;

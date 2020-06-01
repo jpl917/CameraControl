@@ -4,7 +4,7 @@ This example shows one of the ways you can stream live video feed from your DSLR
 
 You should be able to easily change the graphical system to use something else (e.g. GLFW, Qt, openFrameworks, etc..)
 
-`gcc main.c -o liveview -lSDL2 -lSDL2_image`
+gcc main.c -o liveview -lSDL2 -lSDL2_image 
 
 Requirements
 ------------

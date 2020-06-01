@@ -12,7 +12,7 @@ for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 	--set-config          shutterspeed="1/100"      \
 	--set-config          aperture=16   	        \
 	--set-config          iso=100                   \
-	--set-config-index    imageformat=1             \
+	--set-config-index    imageformat=7             \
 
 
 	

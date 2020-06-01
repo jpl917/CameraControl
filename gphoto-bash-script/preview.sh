@@ -20,13 +20,14 @@ winx=0
 winy=0
 count=0
 wintitle_prefix="Camera"
+pwd
+
 for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
 {
         let "winx=100+count%6*300"
  	let "winy=count/6*230"
         wintitle=$wintitle_prefix$count
-	gphoto2 --port "usb:$portname" --capture-movie --stdout | gphoto-live-preview/program/build/liveview $wintitle $winx $winy &
-
+	gphoto2 --port "usb:$portname" --capture-movie --stdout | gphoto-live-preview/program/liveview $wintitle $winx $winy &
 
 	let "count=$count+1"
 	

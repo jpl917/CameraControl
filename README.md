@@ -5,9 +5,8 @@ It is used to change parameters, clear cameras, download images.
 
 Notice: for Canon EOS 800D, the version of libgphoto2 >= 2.5.20.
 
-
 ## Dependency
-[recommend] install step by step:
+install step by step:
 
 ### libgphoto2 and gphoto2
 ```
@@ -22,13 +21,13 @@ tar xzvf m4-1.4.13.tar.gz
 tar xzvf SDL2-2.0.9.tar.gz 
 tar xzvf SDL2_image-2.0.4.tar.gz 
 
-cd libgphoto2-2.5.20
+cd libgphoto2-2.5.23
 ./configure
 make
 sudo make install
 sudo ldconfig
 
-cd ../gphoto2-2.5.20
+cd ../gphoto2-2.5.23
 ./configure
 make
 sudo make install
@@ -36,6 +35,11 @@ make check
 ```
 
 ### [SDL2](https://libsdl.org) and [SDL2_image](https://libsdl.org/projects/SDL_image) for gphoto-live-preview
+
+```
+sudo apt-get install libsdl2-dev libsdl2-image-dev
+```
+or
 
 ```
 cd ../SDL2-2.0.9
@@ -50,11 +54,11 @@ make -j4 && sudo make install
 ```
 
 ### gphoto-live-preview
+This example shows one of the ways you can stream live video feed from your DSLR camera. It simply reads MJPEG output by gPhoto2 frame-by-frame, parses it, and put up the frame buffer on the screen window.
+
 ```
 cd ../../gphoto-live-preview/program
-mkdir build && cd build
-cmake ..
-make -j4
+gcc main.c -o liveview -lSDL2 -lSDL2_image
 ./liveview
 ```
 
@@ -76,7 +80,9 @@ gphoto2 --port "usb:$portname"
 * --set-config          aperture=16
 * --set-config          iso=100
 * --set-config-index    imageformat=1   (1: JPEG, 7: RAW with large JPEG)
-* --set-config-index    drivemode=0 (0: Single, 1: Continuous high speed, 2: Continuous low speed)
+* --set-config-index    drivemode=0 (0: Single, 1: Continuous high speed)
+
+* --set-config-index    evfmode=1 (#Choice 0: 1, #Choice 1: 0)
 
 For unknown configuration choices: `--get-config [name]` or  `--get-config imageformat`
 
@@ -85,7 +91,7 @@ List all configuration: `gphoto2 --list-all-config`
 
 ## Problems during installation
 
-#### if error: 'aclocal-1.16' is missing on your system.
+#### if 'aclocal-1.16' is missing on your system.
 ```
 cd ThirdParty/automake-1.16
 ./configure --prefix=/usr/

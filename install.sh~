@@ -45,6 +45,4 @@ make -j4 && sudo make install
 
 #4. gphoto-live-preview
 cd ../../gphoto-live-preview/program
-mkdir build && cd build
-cmake ..
-make -j4
+gcc main.c -o liveview -lSDL2 -lSDL2_image
