@@ -66,12 +66,14 @@ gcc main.c -o liveview -lSDL2 -lSDL2_image
 ```
 sudo apt install python-tk
 sudo apt install python-pip
-sudo pip install matplotlib serial threading2 easygui
+sudo pip install matplotlib serial threading2 easygui pyserial
 ```
 
 ## Usage
 `python main.py`
 
+
+* if could not open port /dev/ttyACM0: Permission denied, please `sudo`
 
 ## Camera Settings
 For details, please refer to [gphoto2](http://gphoto.sourceforge.net/doc/manual/ref-gphoto2-cli.html) or the documents/ folders
