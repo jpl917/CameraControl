@@ -16,7 +16,7 @@ cd ThirdParty/
 tar xzvf autoconf-2.65.tar.gz 
 tar xzvf automake-1.16.tar.gz 
 tar xzvf gphoto2-2.5.23.tar.gz 
-tar xjvf libgphoto2-2.5.23.tar.bz2 
+tar xzvf libgphoto2-2.5.23.tar.gz
 tar xzvf m4-1.4.13.tar.gz 
 tar xzvf SDL2-2.0.9.tar.gz 
 tar xzvf SDL2_image-2.0.4.tar.gz 
@@ -65,6 +65,7 @@ gcc main.c -o liveview -lSDL2 -lSDL2_image
 ### python related
 ```
 sudo apt install python-tk
+sudo apt install python-pip
 sudo pip install matplotlib serial threading2 easygui
 ```
 
