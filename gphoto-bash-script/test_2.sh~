@@ -1,0 +1,58 @@
+dirname="/home/huawei/Desktop/FaceData/2021-03-18-17-01-18"
+
+max_count=0
+for((i=0;i<24;i++))
+do
+cd $dirname"/camera_"$i
+FILES=$(ls *.JPG)
+cur_count=0
+for file in $FILES
+do
+((cur_count++))
+done
+if (($cur_count>$max_count)); then
+((max_count=$cur_count))
+fi
+done
+
+echo $max_count
+for((i=0;i<$max_count;i++))
+do
+mkdir $dirname"/IMG_"$i
+mkdir $dirname"/RAW_"$i
+done
+
+for((i=2;i<24;i++))
+do
+cd $dirname"/camera_"$i
+FILES_IMG=$(ls *.JPG)
+FILES_RAW=$(ls *.CR2)
+
+cur_count=0
+for file in $FILES_IMG
+do
+if(($i<10))
+then
+mv $file $dirname"/IMG_"$cur_count"/0000000"$i".JPG"
+else
+mv $file $dirname"/IMG_"$cur_count"/000000"$i".JPG"
+fi
+((cur_count++))
+done
+
+cur_count=0
+for file in $FILES_RAW
+do
+if(($i<10));then
+mv $file $dirname"/RAW_"$cur_count"/0000000"$i".CR2"
+else
+mv $file $dirname"/RAW_"$cur_count"/000000"$i".CR2"
+fi
+((cur_count++))
+done
+
+rm -r $dirname"/camera_"$i
+
+done
+
+

@@ -1,48 +1,24 @@
-#!/bin/bash
+dirname="/media/huawei/cc75d96f-155c-4333-9d3b-5929c873b16a/FaceData/2021-03-19-13-25-35"
 
 
-#gphoto2 -L -f /store_00020001/DCIM/100CANON | grep '.JPG' #| sed 's/^.*#1//g'
-
-count=0
-
-dirname="/home/huawei/Desktop/FaceData/"$(date '+%Y-%m-%d-%H-%M-%S')
-#dirname="/media/huawei/Backup Plus/"$(date '+%Y-%m-%d-%H-%M-%S')
-mkdir $dirname
-cd $dirname
-
-for portname in $(gphoto2 --auto-detect | grep "usb" | sed 's/^.*usb://g');do
+cd $dirname"/IMG_0"
+FILES=$(ls *.JPG 2> /dev/null | wc -l);
+if [ "$FILES" != "0" ];then
 {
-	#echo "---------------------------------------------------------" 
-	echo "Camera Id:" $count
-	#echo 'Port: '$portname
-	subdirname=$dirname"/camera_"$count
-	echo $subdirname
-	mkdir $subdirname
-	cd $subdirname
-
-	gphoto2 -f /store_00020001/DCIM/100CANON -P --port "usb:$portname" 
-
-	
-	#if(($count<10));then
-	#{
-	#	gphoto2 -f /store_00020001/DCIM/100CANON -P --port "usb:$portname" --force-overwrite --filename "0000000$count."%C -D
-	#}
-	#else
-	#{
-	#	gphoto2 -f /store_00020001/DCIM/100CANON -P --port "usb:$portname" --force-overwrite --filename "000000$count."%C -D
-	#}
-	#fi
-
-	let "count=$count+1"
-		
-}
+FILES_IMG=$(ls *.JPG)
+for file in $FILES_IMG
+do
+echo $file
 done
-
-
-if [ $count != 24 ]; then
-	echo 'Error: Only ' $count ' Images Captured.'
+echo "file exists"
+}
+else
+{
+echo "file not exists"
+}
 fi
 
+count=24
 
 for((i=0;i<$count;i++))
 do
@@ -108,14 +84,5 @@ fi
 
 
 done
-
-for((i=0;i<$count;i++))
-do
-rm -r $dirname"/camera_"$i
-done
-
-echo 'Download Done'
-
-sudo chmod -R 777 $dirname
 
 
